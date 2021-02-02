@@ -1,0 +1,35 @@
+﻿<Window x:Class="NukeExplorerChangeLanguage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NukeExplorerChangeLanguage"
+        mc:Ignorable="d"
+        Title="Please enter the process you wish to close" Height="140" Width="450" Background="Purple">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
+        <Button x:Name="killProcessButton" Margin="5,0,10,0" Content="Kill Process" Click="CloseExplorer_exe_Click" VerticalAlignment="Top" Height="46"/>
+        <TextBox x:Name="processToKillTextBox" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="5" Height="20" Text="explorer.exe" />
+        <StackPanel Grid.Column="1" Margin="10,4,10,16">
+            <Button x:Name="SetLaptopToPortrait" Content="Rotate to Portrait" Grid.Column="1" Click="SetLaptopToPortrait_Click" Width="198"/>
+            <Button x:Name="SetLaptopToLandscape" Content="Rotate to Landscape" Grid.Column="1" Click="SetLaptopToLandscape_Click" Width="198" />
+            <StackPanel Orientation="Horizontal" >
+                <!--<RadioButton     Content="English" Foreground="White" />
+               <RadioButton x:Name="changeInputLanguage"  Content="Chinese" Foreground="White" />-->
+
+            </StackPanel>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Window>
